@@ -50,7 +50,7 @@ namespace User.Web.Controllers
         public async Task<IActionResult> GetAddressesByUserId(int userId)
         {            
             var addresses = await _addressService.GetAddressesByUserIdAsync(userId);
-            return Ok(addresses);
+            return Ok(addresses); 
         }
 
 
